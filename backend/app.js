@@ -7,7 +7,7 @@ import User from './user.js';
 const corsOptions = {
   origin:[
      "http://localhost:5174",
-     "https://vercel-login-frontend.vercel.app/"
+     "https://vercel-login-frontend.vercel.app"
      
   ],
 
