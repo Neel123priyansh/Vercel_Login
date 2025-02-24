@@ -6,9 +6,9 @@ import User from './user.js';
 // CORS Configuration
 const corsOptions = {
   origin:[
-     "https://login-page-ruddy-five.vercel.app/",
      "http://localhost:5174",
-     "https://login-page-afnj.vercel.app/"
+     "https://vercel-login-frontend.vercel.app/"
+     
   ],
 
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
