@@ -2,7 +2,7 @@ import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-const Form = () => {
+const FormFour = () => {
   const [formData, setFormData] = useState({
     program: '',
     name: '',
@@ -49,25 +49,14 @@ const Form = () => {
   
   return (
     <div className="min-h-screen flex flex-col font items-center justify-center bg-gray-100 p-4">
-      <p className="font-bold text-3xl mb-5">SRM-IST Delhi-NCR Campus</p>
+      <p className="font-bold text-3xl mb-5">SRM Modinagar College of Pharmacy</p>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md flex flex-col items-start">
         <label className="block mb-2 text-left w-full">
           <span className="block text-left">Program *</span>
           <select name="program" value={formData.program} onChange={handleChange} className="w-full p-2 border rounded mt-1" required>
             <option value="">Select a program</option>
-            <option value="B.tech - Computer Science and Engineering">B.tech - Computer Science and Engineering</option>
-            <option value="B.tech - Computer Science and Engineering - AIML">B.tech - Computer Science and Engineering w/s Artificial Intelligence and Machine Learning</option>
-            <option value="B.tech - Computer Science and Engineering(Data Science)">B.tech - Computer Science and Engineering (Data Science)</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.tech - Computer Science and Engineering w/s Cyber Security</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.tech - Computer Science and Engineering w/s Cloud Computing</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Electronics and Communication Engineering </option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Electronics and Communication Engineering w/s Data Science</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Mechanical Engineering w/s Artificial Intelligence and Machine Learning</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Mechanical Engineering</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">M.Tech in Computer Science and Engineering</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">M.Sc. Chemistry</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">Ph.D in Engineering and Technology</option>
-
+            <option value="B.tech - Computer Science and Engineering">Bachelor of Pharmacy (B.Pharm)</option>
+            <option value="B.tech - Computer Science and Engineering">Ph.D in Pharmacy</option>
           </select>
         </label>
         <label className="block mb-2 text-left w-full">
@@ -101,4 +90,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormFour;
