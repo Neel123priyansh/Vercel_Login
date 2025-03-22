@@ -3,12 +3,12 @@ import Formone from './form_1'
 import FormTwo from './form_2'
 import FormThree from './form_3'
 import FormFour from './form_4'
-import {Route, Routes, BrowserRouter} from 'react-router-dom'
+import {Route, Routes,HashRouter, BrowserRouter} from 'react-router-dom'
 
 const App = () => {
   return (
     <div>
-     <BrowserRouter>
+     <HashRouter>
      <Routes>
       <Route path='/' element={<Form/>}/>
       <Route path='/Managment' element={<Formone/>}/>
@@ -16,7 +16,7 @@ const App = () => {
       <Route path='/Computer' element={<FormThree/>}/>
       <Route path='/Medical' element={<FormFour/>}/>
      </Routes>
-     </BrowserRouter>
+     </HashRouter>
     </div>
   )
 }
