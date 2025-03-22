@@ -48,7 +48,8 @@ const Form = () => {
   };
   
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+    <div className="min-h-screen flex flex-col font items-center justify-center bg-gray-100 p-4">
+      <p className="font-bold text-3xl mb-5">SRM-IST Delhi-NCR Campus</p>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md flex flex-col items-start">
         <label className="block mb-2 text-left w-full">
           <span className="block text-left">Program *</span>
@@ -91,6 +92,7 @@ const Form = () => {
           </button>
         </div>
       </form>
+      <p className="font-bold text-xs mt-5 font-mono">Made by Orton.ai</p>
     </div>
   );
 };
