@@ -59,7 +59,7 @@ app.get('/users', async (req, res) => {
   }
 });
 
-app.post("/reg", (req, res) => {
+app.use("/reg", (req, res) => {
   register(req, res);
   res.json({message: "Hello, its working"})
 });
