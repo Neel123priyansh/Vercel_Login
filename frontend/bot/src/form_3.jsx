@@ -55,12 +55,12 @@ const FormThree = () => {
           <span className="block text-left">Program *</span>
           <select name="program" value={formData.program} onChange={handleChange} className="w-full p-2 border rounded mt-1" required>
             <option value="">Select a program</option>
-            <option value="B.tech - Computer Science and Engineering">Bachelor of Computer Applications (BCA)</option>
-            <option value="B.tech - Computer Science and Engineering">Bachelor of Computer Applications in Data Science</option>
-            <option value="B.tech - Computer Science and Engineering">B.Sc.(Computer Science)</option>
-            <option value="B.tech - Computer Science and Engineering">Master of Computer Applications (MCA)</option>
-            <option value="B.tech - Computer Science and Engineering">PhD (Computer Science & Applications)</option>
-            <option value="B.tech - Computer Science and Engineering">Master of Computer Applications in Generative Artificial Intelligence</option>
+            <option value="Bachelor of Computer Applications (BCA)">Bachelor of Computer Applications (BCA)</option>
+            <option value="Bachelor of Computer Applications in Data Science">Bachelor of Computer Applications in Data Science</option>
+            <option value="B.Sc.(Computer Science)">B.Sc.(Computer Science)</option>
+            <option value="Master of Computer Applications (MCA)">Master of Computer Applications (MCA)</option>
+            <option value="PhD (Computer Science & Applications)">PhD (Computer Science & Applications)</option>
+            <option value="Master of Computer Applications in Generative Artificial Intelligence">Master of Computer Applications in Generative Artificial Intelligence</option>
 
           </select>
         </label>

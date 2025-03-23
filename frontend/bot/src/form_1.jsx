@@ -55,9 +55,9 @@ const Formone = () => {
           <span className="block text-left">Program *</span>
           <select name="program" value={formData.program} onChange={handleChange} className="w-full p-2 border rounded mt-1" required>
             <option value="">Select a program</option>
-            <option value="B.tech - Computer Science and Engineering">Bachelor of Business Administration (BBA)</option>
-            <option value="B.tech - Computer Science and Engineering(Data Science)">Master of Business Administration (MBA)</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">Ph.D in Management</option>
+            <option value="Bachelor of Business Administration (BBA)">Bachelor of Business Administration (BBA)</option>
+            <option value="Master of Business Administration (MBA)">Master of Business Administration (MBA)</option>
+            <option value="Ph.D in Management">Ph.D in Management</option>
           </select>
         </label>
         <label className="block mb-2 text-left w-full">

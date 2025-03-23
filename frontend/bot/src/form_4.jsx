@@ -55,8 +55,8 @@ const FormFour = () => {
           <span className="block text-left">Program *</span>
           <select name="program" value={formData.program} onChange={handleChange} className="w-full p-2 border rounded mt-1" required>
             <option value="">Select a program</option>
-            <option value="B.tech - Computer Science and Engineering">Bachelor of Pharmacy (B.Pharm)</option>
-            <option value="B.tech - Computer Science and Engineering">Ph.D in Pharmacy</option>
+            <option value="Bachelor of Pharmacy (B.Pharm)">Bachelor of Pharmacy (B.Pharm)</option>
+            <option value="Ph.D in Pharmacy">Ph.D in Pharmacy</option>
           </select>
         </label>
         <label className="block mb-2 text-left w-full">

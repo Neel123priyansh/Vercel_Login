@@ -58,15 +58,15 @@ const Form = () => {
             <option value="B.tech - Computer Science and Engineering">B.tech - Computer Science and Engineering</option>
             <option value="B.tech - Computer Science and Engineering - AIML">B.tech - Computer Science and Engineering w/s Artificial Intelligence and Machine Learning</option>
             <option value="B.tech - Computer Science and Engineering(Data Science)">B.tech - Computer Science and Engineering (Data Science)</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.tech - Computer Science and Engineering w/s Cyber Security</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.tech - Computer Science and Engineering w/s Cloud Computing</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Electronics and Communication Engineering </option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Electronics and Communication Engineering w/s Data Science</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Mechanical Engineering w/s Artificial Intelligence and Machine Learning</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">B.Tech - Mechanical Engineering</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">M.Tech in Computer Science and Engineering</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">M.Sc. Chemistry</option>
-            <option value="B.tech - Computer Science and Engineering(Cyber Security)">Ph.D in Engineering and Technology</option>
+            <option value="B.tech - Computer Science and Engineering w/s Cyber Security">B.tech - Computer Science and Engineering w/s Cyber Security</option>
+            <option value="B.tech - Computer Science and Engineering w/s Cloud Computing">B.tech - Computer Science and Engineering w/s Cloud Computing</option>
+            <option value="B.Tech - Electronics and Communication Engineering">B.Tech - Electronics and Communication Engineering </option>
+            <option value="B.Tech - Electronics and Communication Engineering w/s Data Science">B.Tech - Electronics and Communication Engineering w/s Data Science</option>
+            <option value="B.Tech - Mechanical Engineering w/s Artificial Intelligence and Machine Learning">B.Tech - Mechanical Engineering w/s Artificial Intelligence and Machine Learning</option>
+            <option value="B.Tech - Mechanical Engineering">B.Tech - Mechanical Engineering</option>
+            <option value="M.Tech in Computer Science and Engineering">M.Tech in Computer Science and Engineering</option>
+            <option value="M.Sc. Chemistry">M.Sc. Chemistry</option>
+            <option value="Ph.D in Engineering and Technology">Ph.D in Engineering and Technology</option>
 
           </select>
         </label>

@@ -55,7 +55,7 @@ const FormTwo = () => {
           <span className="block text-left">Program *</span>
           <select name="program" value={formData.program} onChange={handleChange} className="w-full p-2 border rounded mt-1" required>
             <option value="">Select a program</option>
-            <option value="B.tech - Computer Science and Engineering">Bachelor in Hotel & Catering Management</option>
+            <option value="Bachelor in Hotel & Catering Management">Bachelor in Hotel & Catering Management</option>
           </select>
         </label>
         <label className="block mb-2 text-left w-full">
