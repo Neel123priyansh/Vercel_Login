@@ -61,7 +61,7 @@ app.get('/users', async (req, res) => {
 
 app.post("/reg", (req, res) => {
   register(req, res);
-  console.log("Hello, it's working")
+  res.json({message: "Hello, its working"})
 });
 
 app.listen(3000, () => console.log("Server running on port 3000"));
