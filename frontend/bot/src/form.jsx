@@ -27,7 +27,7 @@ const Form = () => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
     try {
-      const response = await fetch('https://vercel-login-ebon.vercel.app/reg', { 
+      const response = await fetch('https://vercel-login-beta.vercel.app/reg', { 
         method: "POST",
         headers: {
           "Content-Type": "application/json",
