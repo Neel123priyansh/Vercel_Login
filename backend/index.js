@@ -50,12 +50,12 @@ const register = async (req, res) => {
   }   
 };
 
-app.get('/', (req, res) => {
-  res.send({
-    activeStatus: true,
-    error: false,
-  });
-});
+// app.get('/', (req, res) => {
+//   res.send({
+//     activeStatus: true,
+//     error: false,
+//   });
+// });
 
 // Get All Users
 app.get('/users', async (req, res) => {
@@ -67,7 +67,7 @@ app.get('/users', async (req, res) => {
   }
 });
 
-app.post("/reg", (req, res) => {
+app.post("/", (req, res) => {
   register(req, res);
   return "Heelo, its working";
 });
