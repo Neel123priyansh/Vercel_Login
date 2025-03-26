@@ -20,7 +20,7 @@
     }
   },
   "env": {
-    "MONGO_URI": "YOUR_MONGODB_CONNECTION_STRING",
+    "MONGO_URI": "mongodb+srv://SRM-Bot:0cvOFJu52YPOyCws@srmdatabase.azx6q.mongodb.net/?retryWrites=true&w=majority&appName=SRMDataBase",
     "PORT": "3000"
   }
 }
