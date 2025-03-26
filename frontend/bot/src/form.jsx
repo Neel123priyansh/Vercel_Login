@@ -27,16 +27,19 @@ const Form = () => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
     try {
-      const response = await fetch('https://vercel-login-backend.vercel.app/',data, { 
+      const response = await fetch('https://vercel-login-backend.vercel.app/register', { 
         method: "POST",
-        withCredentials: true,
+        credentials: "include",  // Use for CORS with credentials
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData) 
+        body: JSON.stringify(formData)   // ✅ Correctly sending formData as JSON body
       });
-      const data = await response.json();
+
+      const data = await response.json();  // ✅ Parse the JSON response properly
       console.log("Response from server:", data);
+
+
       if (response.ok) {
         alert("Form submitted successfully!");
         setFormData({ program: "", name: "", phone: "", email: "", city: "" });

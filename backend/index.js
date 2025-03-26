@@ -10,7 +10,7 @@ dotenv.config({ path: ".env" });  // ✅ Correct dotenv import
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://vercel-login-frontend.vercel.app",
+    "https://vercel-login-backend.vercel.app/register",
     "https://postman.com"
   ],
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
