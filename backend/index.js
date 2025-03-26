@@ -48,9 +48,10 @@ const register = async (req, res) => {
       console.log("User created: ", userCreated);
 
       res.status(200).json({ msg: "User registered successfullyy", userId: userCreated._id.toString(), }); 
-  }   catch (error) {
-      console.error("Error in register function:", error.message);
+  }   catch (error) {      
       res.status(500).json({ msg: "Internal Server Error" });
+      console.error("Error in register function:", error.message);
+
   }   
 };
 
