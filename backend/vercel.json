@@ -2,13 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "./index.js",      
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "50mb",   
-        "memory": 1024,           
-        "timeout": 30            
-      }
+      "src": "index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -17,5 +12,15 @@
       "dest": "/index.js",
       "methods": ["GET", "POST", "PUT", "DELETE"]
     }
-  ]
+  ],
+  "functions": {
+    "index.js": {
+      "memory": 1024,
+      "timeout": 30
+    }
+  },
+  "env": {
+    "MONGO_URI": "YOUR_MONGODB_CONNECTION_STRING",
+    "PORT": "3000"
+  }
 }
