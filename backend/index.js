@@ -2,6 +2,9 @@ import express, { json } from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import User from './user.js';
+require("dotenv").config({
+  path: ".env"
+})
 
 // CORS Configuration
 const corsOptions = {
@@ -21,7 +24,7 @@ app.use(json());
 app.use(cors(corsOptions));
 
 const MONGO_URI = "mongodb://localhost:27017/versel";
-mongoose.connect('mongodb+srv://SRM-Bot:0cvOFJu52YPOyCws@srmdatabase.azx6q.mongodb.net/?retryWrites=true&w=majority&appName=SRMDataBase')
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log("MongoDB Connection Error:", err));
 
