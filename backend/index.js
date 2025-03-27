@@ -5,22 +5,23 @@ import User from './user.js';
 import dotenv from "dotenv";
 
 dotenv.config({ path: ".env" });  // ✅ Correct dotenv import
+const app = express();
+app.use(json());
 
 // ✅ CORS Configuration applied at the top
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://vercel-login-backend.vercel.app/register",
-    "https://postman.com"
+    "https://vercel-login-backend.vercel.app/",
+     "https://postman.com"
   ],
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
 };
 
-const app = express();
-app.use(json());
 app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
 
 // ✅ Use MongoDB connection from `.env`
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/versel";
@@ -68,14 +69,13 @@ app.get('/', (req, res) => {
 });
 
 // ✅ Global CORS Middleware (Apply at the top instead of here)
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://vercel-login-frontend.vercel.app");
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  res.header("Access-Control-Allow-Credentials", "true");
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "https://vercel-login-frontend.vercel.app");
+//   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+//   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+//   res.header("Access-Control-Allow-Credentials", "true");
+//   next();
+// });
 
-// ✅ Port Configuration
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
